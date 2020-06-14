@@ -101,6 +101,7 @@ body{
     background-repeat: repeat;
     background-size:contain;
     border: 5px transparent;
+    background-color: white;
 
 }
 
@@ -124,7 +125,6 @@ body{
 .normal-font-paragraph{
     font-family: "Times New Roman";
     font-style: normal;
-
 }
 
 p::first-letter {
@@ -136,4 +136,47 @@ p::first-letter {
 p {
     border-top: 1px solid black;
     line-height: 200%;
+}
+
+.icon-in-btn:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: text-top;
+    background-color: transparent;
+    background-position : center center;
+    background-repeat:no-repeat;
+}
+
+.icon-in-btn{
+    color: black;
+    background-color: white;
+    border-color: #6c757d;
+    margin: 2px;
+    mix-blend-mode: luminosity;
+}
+
+.icon-in-btn:hover{
+    color: red;
+    background-color: papayawhip;
+    border-color: #6c757d;
+    margin: 2px;
+    mix-blend-mode: inherit;
+
+}
+
+.icon-email:before{
+    background-image : url(../res/icon/email.png);
+}
+.icon-linkedin:before{
+    background-image : url(../res/icon/linkedin.png);
+}
+.icon-github:before{
+    background-image : url(../res/icon/github.png);
+}
+
+.icon-play:before{
+    background-image : url(../res/icon/play.png);
 }
