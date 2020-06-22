@@ -111,16 +111,13 @@ body{
     border: 5px transparent;
 }
 
+
+
 .medieval-font{
     font-family: MedievalSharp;
     font-style: normal;
 }
 
-.medieval-font-paragraph{
-    font-family: MedievalSharp;
-    font-style: normal;
-
-}
 
 .normal-font-paragraph{
     font-family: "Times New Roman";
@@ -179,4 +176,58 @@ p {
 
 .icon-play:before{
     background-image : url(../res/icon/play.png);
+}
+
+.head_text{
+    font-size: 40px;
+
+}
+
+.name_text{
+    font-size: 30px;
+}
+.default_text{
+    font-size: 18px;
+}
+
+.btn-translation-border{
+    border-top: 10px solid;
+    border-bottom: 10px solid;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-image: url("../res/background/btn.png") ;
+    border-image-repeat: round;
+    border-image-slice:  50;
+    border-image-width: 25px;
+}
+
+.btn-translation {
+    color: black;
+    font-size: 16px;
+}
+
+.btn-translation:hover {
+    background-color: papayawhip;
+}
+
+.btn-translation:focus, .btn-translation.focus {
+    color: black;
+    box-shadow: 0 0 0 0.2rem transparent;
+    font-weight: bold;
+    background-color: papayawhip;
+}
+
+.btn-translation.disabled, .btn-translation:disabled {
+    color: black;
+    background-color: gray;
+}
+
+.btn-translation:not(:disabled):not(.disabled):active, .btn-translation:not(:disabled):not(.disabled).active,
+.show > .btn-head.dropdown-toggle {
+    color: red;
+}
+
+.btn-translation:not(:disabled):not(.disabled):active:focus, .btn-translation:not(:disabled):not(.disabled).active:focus,
+.show > .btn-translation.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem transparent;
 }

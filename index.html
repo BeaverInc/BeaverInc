@@ -11,9 +11,21 @@
 <body>
 
 <div class="container background-frame medieval-font">
+    <div class="row float-right">
+        <div class="btn-group btn-group-toggle btn-translation-border" id="translation" data-toggle="buttons">
+            <label class="btn btn-translation active">
+                <input type="radio" value="english" autocomplete="off" checked> English
+            </label>
+            <label class="btn btn-translation">
+                <input type="radio" value="chinese" autocomplete="off" > &nbsp&nbsp中文&nbsp&nbsp
+            </label>
+        </div>
+    </div>
 
-    <div class="row justify-content-center title-style">
-        <h1>Y's Scriptorium</h1>
+    <div class="row justify-content-center float-none title-style col-12">
+        <div class = "head_text" id = "scriptorium">
+            Y's Scriptorium
+        </div>
     </div>
 
     <div class="row">
@@ -24,43 +36,43 @@
             </div>
             <div class="col-12 bio-content">
                 <div class="align-content-center">
-                    <div class="row">
-                        <h3>Yutian</h3>
+                    <div class="row name_text" id = "my_name">
+                        Yutian
                     </div>
-                    <div class="row">
-                        <h6>Developer<br></h6>
+                    <div class="row default_text" id = "my_job">
+                        Developer
                     </div>
-                    <div class="row">
-                        <h6>------</h6>
+                    <div class="row default_text" >
+                        <br>------
                     </div>
-                    <div class="row">
-                        <h6>Computer Science</h6>
+                    <div class="row default_text" id = "computer_Science" >
+                        Computer Science
                     </div>
-                    <div class="row">
-                        <h6>B.Eng. Civil</h6>
+                    <div class="row default_text" id ="BEng_civil">
+                        B.Eng. Civil
                     </div>
 
                 </div>
-                <div class="row align-content-center medieval-font-paragraph ">
-                    <p>
+                <div class="row align-content-center " >
+                    <p id ="about_me">
                         This site is developed by me using bootstrap.
                         <br>It is for demonstrating my personal projects.
                     </p>
                 </div>
                 <div class="row">
-                    <a href="mailto:lanyutian88@gmail.com"  class="btn icon-email icon-in-btn">
+                    <a href="mailto:lanyutian88@gmail.com"  class="btn icon-email icon-in-btn" id ="email_btn">
                         My Email
                     </a>
 
                 </div>
-                <div class="row ">
-                    <a href="https://github.com/BeaverInc?tab=repositories"  class="btn icon-in-btn icon-github ">
+                <div class="row">
+                    <a href="https://github.com/BeaverInc?tab=repositories"  class="btn icon-in-btn icon-github" id="git_btn">
                         My Github
                     </a>
 
                 </div>
-                <div class="row ">
-                    <a href= "https://www.linkedin.com/in/yutian-lan-90124b40/" class="btn icon-in-btn icon-linkedin">
+                <div class="row">
+                    <a href= "https://www.linkedin.com/in/yutian-lan-90124b40/" class="btn icon-in-btn icon-linkedin" id ="linkedin_btn">
                         My Linkedin
                     </a>
 
@@ -75,7 +87,7 @@
             <div class="row mt-2 project-container-child">
                 <div class="col-12  col-lg-7 col-xl-8">
                     <div class = "normal-font-paragraph">
-                        <p>
+                        <p id = "project_covid19">
                             Covid19 happens when I lived in montreal. Initially,  sante montreal only provided covid cases in each borough, and I was taking these data to Excel everyday to figure out which area is the most dangerous area. Then I realized I can make it automatic by web scraping, so I started this project.
                             <br>After I have enough data, I expand the project with some simple web UI.
 
@@ -84,12 +96,12 @@
 
                     <div class="row ">
                         <div class = "col-6">
-                            <a href="https://beaverinc.github.io/covid19montreal"  class="btn icon-in-btn icon-play ">
+                            <a href="https://beaverinc.github.io/covid19montreal"  class="btn icon-in-btn icon-play " id ="go_project_btn">
                                 Go to project
                             </a>
                         </div>
                         <div class = "col-6">
-                            <a href="https://github.com/BeaverInc/covid19CityMontreal"  class="btn icon-in-btn icon-github ">
+                            <a href="https://github.com/BeaverInc/covid19CityMontreal"  class="btn icon-in-btn icon-github " id ="go_repositories_btn">
                                 Go to repositories
                             </a>
                         </div>
@@ -140,6 +152,7 @@
 <script src="css/bootstrap.css" ></script>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/translator.js"></script>
 
 </body>
 </html>
